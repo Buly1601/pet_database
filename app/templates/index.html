@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Form with Dropdowns and Inputs</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+    }
+    .container {
+        max-width: 400px;
+        margin: 50px auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    label {
+        display: block;
+        margin-bottom: 5px;
+    }
+    input[type="text"], select {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        box-sizing: border-box;
+    }
+    select {
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        background-image: url('data:image/svg+xml;utf8,<svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/><path d="M0 0h24v24H0z" fill="none"/></svg>');
+        background-repeat: no-repeat;
+        background-position-x: 100%;
+        background-position-y: 50%;
+        padding-right: 30px;
+    }
+    .color-option {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        margin-right: 5px;
+        border: 1px solid #ccc;
+        cursor: pointer;
+    }
+    .color-option:hover {
+        border-color: #999;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <form>
+        <label for="pet">Choose a pet:</label>
+        <select id="pet" name="pet">
+            <option value="cat">Cat</option>
+            <option value="dog">Dog</option>
+        </select>
+
+        <label for="petName">Enter your pet's name:</label>
+        <input type="text" id="petName" name="petName" placeholder="e.g., Fluffy">
+
+        <label for="color">Choose a color:</label>
+        <select id="color" name="color">
+            <option value="Beige">Red</option>
+            <option value="Negro">Blue</option>
+            <option value="Blanco">Green</option>
+            <option value="Gris">Yellow</option>    
+        </select>
+
+        <button type="submit">Submit</button>
+    </form>
+</div>
+
+</body>
+</html>
